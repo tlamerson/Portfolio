@@ -1,0 +1,98 @@
+body {
+    font-family: Garamond, serif;
+    background-color: #d3f4fd;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    color: rgb(33, 33, 33);
+}
+
+
+h1 {
+  font-family: Garamond, serif;
+}
+
+h2 {
+  font-family: Garamond, serif;
+}
+
+h3 {
+  font-family: Garamond, serif;
+}
+
+h4 {
+  font-family: Garamond, serif;
+}
+
+h5 {
+      font-family: Garamond, serif;
+}
+
+h6 {
+  font-family: Garamond, serif;
+}
+
+.nav_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color: purple;
+}
+
+a.active {
+  color: black;
+  font-weight: bold;
+}
+
+
+
+.flex_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.content_card {
+  border: 1px rgb(112, 202, 222) solid;
+  width: 25%;
+  margin: 20px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px rgb(136, 219, 255);
+  background-color: #b0eeff;
+}
+
+.header-container {
+  border: 1px solid cornflowerblue;
+  width: 70%;
+  margin: 20px;
+  display: flex;
+  box-shadow: 5px 5px 5px lightgreen;
+}
+
+.top-container {
+  margin: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.container {
+  padding-left: 25px;
+}
+
+.divider {
+  border-top: 3px solid rgb(33, 33, 33);
+  margin-left: calc(-1 * 2rem);
+  box-shadow: 1px 1px 10px lightgreen;
+}
+
+strong {
+  color: red;
+}
+
