@@ -1,85 +1,136 @@
 {% extends 'main/base.html' %} {% load static %} {% block content %}
 
-<div class="page-wrapper">
-<section id="banner">
-	<div class="inner">
-		<a href="#" class="image.me" >
-          <img src="{% static 'images/main/me.jpg' %}" alt=""/>
-		<h2>Tyler Amerson</h2>
-		<p>Looking to work together?: tlamerson983@gmail.com</p>
-	</div>
-</section>
-
-    <section id="two" class="wrapper alt spotlight style2">
+    <!-- Banner -->
+    <section id="banner">
       <div class="inner">
-        <a href="#" class="image">
-          <img src="" alt="" />
-        </a>
-        <div class="content">
-          <h2 class="major">Tyler Amerson</h2>
-          <p>Looking to work together?: tlamerson983@gmail.com</p>
-          <a href="#" class="special"></a>
-        </div>
+        <div class="logo"><span class="icon fa-gem"></span></div>
+        <h2>Tyler Amerson</h2>
+        <p>Looking to work together? email me at tlamerson983@gmail.com</p>
       </div>
     </section>
+    <!-- Wrapper -->
+    <section id="wrapper">
+      <!-- One -->
+      <section id="one" class="wrapper spotlight style1">
+        <div class="inner">
+          <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+          <div class="content">
+            <h2 class="major">Portfolio</h2>
+            <p>Take a look at my project page!</p>
+            <a href="{% url 'project2' %}" class="special"></a>
+          </div>
+        </div>
+      </section>
+      <!-- Two -->
+      <section id="two" class="wrapper alt spotlight style2">
+        <div class="inner">
+          <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+          <div class="content">
+            <h2 class="major">About Me</h2>
+            <p>
+              My name is Tyler, I've been programming for about a year now, My
+              main languages, libraries and frameworks are below. But feel free
+              to contact me with a specific request if you'd like to work
+              together!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Three -->
 
-    <h3>About me:</h3>
-    <div class="divider"></div>
-    <h4>
-      My name is Tyler, I've been programming for about a year now, My main
-      languages, libraries and frameworks are below. But feel free to contact me
-      with a specific request if you'd like to work together!
-    </h4>
+      <!-- Four -->
+      <section id="four" class="wrapper alt style1">
+        <div class="inner">
+          <h2 class="major">My skills</h2>
+          <p>
+            I work across the full development stack, combining clean code,
+            strong fundamentals, and modern tools. Here’s an overview of the
+            technologies I use to build fast, reliable, production-ready
+            applications.
+          </p>
+          <section class="features">
+            <article>
+              <a href="#" class="image"
+                ><img src="images/pic04.jpg" alt=""
+              /></a>
+              <h3 class="major">Front-End Tools</h3>
+              <p>HTML5, CSS3, Javascript (ES6+), React.js, Bootstrap.</p>
+            </article>
+            <article>
+              <a href="#" class="image"
+                ><img src="images/pic05.jpg" alt=""
+              /></a>
+              <h3 class="major">Back-End Tools</h3>
+              <p>
+                Node.js, Python, Django, Authentication & Authorization,
+                Microservices
+              </p>
+            </article>
+            <article>
+              <a href="#" class="image"
+                ><img src="images/pic06.jpg" alt=""
+              /></a>
+              <h3 class="major">Hosting & Database Tools</h3>
+              <p>AWS, Azure, MongoDB, MySQL, ORMs, SQLite</p>
+            </article>
+            <article>
+              <a href="#" class="image"
+                ><img src="images/pic07.jpg" alt=""
+              /></a>
+              <h3 class="major">Additional Tools & Tech</h3>
+              <p>Git/Github, Docker, Linux, Ubuntu, Cloud Architecture</p>
+            </article>
+          </section>
+          <ul class="actions">
+        </div>
+      </section>
+    </section>
+    <!-- Footer -->
+    <section id="footer">
+      <div class="inner">
+        <h2 class="major">Contact me!</h2>
+        <form method="post" action="."> {% csrf_token %}
+          <div class="fields">
+            <div class="field">
+              <label for="name">Name</label>
+              {{ form.your_name }}
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              {{ form.your_email }}
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              {{ form.message }}
+            </div>
+          </div>
+          <ul class="actions">
+            <li><input type="submit" value="Send Message" /></li>
+          </ul>
+        </form>
+        <ul class="contact">
+          <li class="icon solid fa-home">
+            Amerson Enterprise Services LLC<br />
+            303 E Jackson st<br />
+            Lamar, SC 29069-9771
+          </li>
+          <li class="icon solid fa-phone">+1 (843) 610-1932</li>
+          <li class="icon solid fa-envelope">
+            <a href="#">tlamerson983@gmail.com</a>
+          </li>
+          <li class="icon brands fa-facebook-f">
+            <a href="https://www.facebook.com/tyler.amerson.644263/"
+              >facebook</a
+            >
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Untitled Inc. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </section>
   </div>
-  <div>
-    <h2>My skills</h2>
-    <div class="divider"></div>
-    <div class="flex_container">
-      <div class="content_card">
-        <h5>front-end</h5>
-        <img src="{% static 'main/React-icon.png' %}" alt="cool img" />
-        <p>I utilize React.js and css frameworks to develop my front-ends</p>
-      </div>
-      <div class="content_card">
-        <h5>Back-end</h5>
-        <img src="{% static 'main/Django-icon.png' %}" alt="cool img" />
-        <p>
-          Python, Django, Javascript, and Node.js glue together my project
-          back-ends
-        </p>
-      </div>
-      <div class="content_card">
-        <h5>Databases</h5>
-        <img src="{% static 'main/Mysql.png' %}" alt="cool img" />
-        <p>
-          My project databases often utilize Sqlite, Json, MySQL, or PostGreSQL.
-        </p>
-      </div>
-    </div>
-    <h3>My projects! <a>[Full list is a WIP]</a></h3>
-    <div class="divider"></div>
-    <div class="flex_container">
-      <div class="content_card">
-        <h5>Personal Business Website</h5>
-        <a class="nav_link" href="{% url 'go_external' %}">link</a>
-        <p>
-          One of my first completed projects! Outdated but gets the job done!
-        </p>
-      </div>
-      <div class="content_card">
-        <h5>To-Do list</h5>
-        <a class="nav_link" href="{% url 'go_external_2' %}">link</a>
-        <p>A basic dynamic To-do list, quickly gets and posts data</p>
-      </div>
-      <div class="content_card">
-        <h5>Personal Blog</h5>
-        <a class="nav_link" href="{% url 'go_external_3' %}">link</a>
-        <p>
-          A blog i'll be updating with project updates and personal items
-          regularly
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+</body>
+
 {% endblock %}

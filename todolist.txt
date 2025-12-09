@@ -1,0 +1,6 @@
+The todolist helps me remember what i want to add in the future
+
+finish form
+
+add a loading bar to the form
+

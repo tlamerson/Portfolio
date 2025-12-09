@@ -123,3 +123,13 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+#Email field
+# Source - https://stackoverflow.com/a
+# Posted by Ardu1na
+# Retrieved 2025-12-08, License - CC BY-SA 4.0
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'tlamerson983@gmail.com'
+EMAIL_HOST_PASSWORD = 'linn vvpz ldbg emxo'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

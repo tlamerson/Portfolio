@@ -1,0 +1,83 @@
+{% extends 'main/base.html' %} {% load static %} {% block content %}
+
+<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">My Projects</h2>
+									<p>Below are 2 of my favorite projects and what they were made with</p>
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3 class="major">Personal freelance business</h3>
+											<p>One of my first official projects that included a bit of front-end, back-end, and hosting. It taught me the ins and outs of website development and i'll likely revisit soon to improve on my old work</p>
+											<a href="https://tylera.pythonanywhere.com" class="special">Check it out!</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3 class="major">CRM with AWS</h3>
+											<p>A recent project, i cloned a repository with SuiteCRM, used an amazon Ubuntu instance and hosted all of the code there. Had to think outside of the box as the official setup guide was unrelated. Tinkered with php settings for quite some time to make sure it fit the limits within my limited instance and storage capacities</p>
+											<a href="http://ec2-18-224-22-222.us-east-2.compute.amazonaws.com/public/#/home" class="special">Check it out!</a>
+										</article>
+										<!--<article>
+											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<h3 class="major">Ante fermentum</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<h3 class="major">Fusce consequat</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+									</section>
+									<ul class="actions">
+										<li><a href="#" class="button">Browse All</a></li>
+									</ul>-->
+								</div>
+							</section>
+<section id="footer">
+      <div class="inner">
+        <h2 class="major">Contact me!</h2>
+        <form method="post" action="/contact/">
+          <div class="fields">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="4"></textarea>
+            </div>
+          </div>
+          <ul class="actions">
+            <li><input type="submit" value="Send Message" /></li>
+          </ul>
+        </form>
+        <ul class="contact">
+          <li class="icon solid fa-home">
+            Amerson Enterprise Services LLC<br />
+            303 E Jackson st<br />
+            Lamar, SC 29069-9771
+          </li>
+          <li class="icon solid fa-phone">+1 (843) 610-1932</li>
+          <li class="icon solid fa-envelope">
+            <a href="#">tlamerson983@gmail.com</a>
+          </li>
+          <li class="icon brands fa-facebook-f">
+            <a href="https://www.facebook.com/tyler.amerson.644263/"
+              >facebook</a
+            >
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Untitled Inc. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </section>
+
+{% endblock %}
