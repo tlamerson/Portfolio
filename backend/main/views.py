@@ -9,7 +9,10 @@ def main_page(request):
     if request.method =='POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            send_mail('The contact form ', 'this is the message', 'noreply@tlamerson.com', ['tlamerson983@gmail.com'])
+            name = form.cleaned_data['your_name']
+            email = form.cleaned_data['your_email']
+            message = form.cleaned_data['message']
+            send_mail(f'portfolio inquiry: {name} ', f'{email} says {message}', 'noreply@tlamerson.com', ['tlamerson983@gmail.com'])
             return redirect('/')
     else:
         form = ContactForm()
